@@ -1,0 +1,266 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; /*取消列表默认样式*/
+}
+a {
+  text-decoration: none;
+}
+body {
+    font-size: 16px;
+    background: #fff;
+    margin: auto;
+}
+.w {
+  width: 1200px;
+  margin: auto;
+}
+/* banner 部分 */
+.banner {
+  margin-top: 84px;
+  width: 100%;
+  height: 400px;
+  background: url('https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/news/img/newsBanner.png') no-repeat center;
+  background-size: cover;
+}
+/* .banner img {
+  flex: 1;
+  width: 100%;
+  margin: auto;
+} */
+.bodyPart {
+  margin: auto;
+}
+/* 新闻列表部分 */
+.newsList {
+  font-family: 'PingFang SC';
+  width: 100%;
+  margin: 50px auto 0;
+}
+.newsOne {
+  margin: auto;
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  /* height: 192px; */
+  /* padding: 30px 50px 50px; */
+  border: none;
+  border-bottom: 1px solid #EAEAEA;
+  transform: rotate(0deg);
+  transition:all .3s;
+}
+.newsOne:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.05);
+}
+.newsOne:hover .link h4,
+.newsOne:hover .link span {
+  color: #C02A35;
+}
+.newsOne .time {
+  margin: 30px 50px 50px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 30px 0 0 20px; */
+}
+.newsOne .content {
+  margin: 30px 50px 50px ;
+  flex: 8;
+}
+.content .link {
+  /* margin-top: 30px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 940px; */
+  /* height: 32px; */
+}
+.link h4 {
+  /* margin-top: 30px; */
+  width: 85%;
+  height: 27px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  /* line-height: 18px; */
+  color: #333333;
+}
+.link span {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #333333;
+}
+.content .word {
+  margin-top: 20px;
+  /* width: 940px; */
+  height: 84px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  color: #666666;
+}
+.time span:first-child {
+  display: inline-block;
+  font-weight: 100;
+  font-size: 58px;
+  margin-top: -10px;
+  color: #000000;
+}
+.time span:last-child {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 32px;
+  color: #C4C4C4;
+}
+/* 分页部分 */
+#page {
+  margin-top: 80px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#page span,
+#page div {
+  display: inline-block;
+  margin: 0 4px;
+  width: 40px;
+  height: 36px;
+  cursor: pointer;
+  line-height: 36px;
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid #E9E9E9;
+  border-radius: 2px;
+}
+#page div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#page div img{
+  width: 9px;
+  height: 14px;
+  /* background: url(../img/left_page.png) no-repeat center;
+  background-size: contain ; */
+}
+#page span:hover,
+#page div:hover {
+  border: none;
+  border: 1px solid #C02A35;
+}
+.changeRed {
+  display: inline-block;
+  width: 40px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #C02A35 !important;
+  border-radius: 2px;
+}
+
+
+
+/* 底栏部分 */
+footer {
+  width: 100%;
+  margin-top: 130px;
+  height: 373px;
+  background: #F3F5F8;
+}
+.boxTop{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  height: 288px;
+}
+.rowStyle {
+  margin: 56px 0 24px;
+  width: 400px;
+  height: 18px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #333333;
+}
+.cooperation span,
+.contact span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #666666;
+}
+.code .iconFooter {
+  margin-top: 56px;
+}
+.code .iconFooter img {
+  width: 40px;
+  height: 40px;
+}
+.code .iconFooter img:first-child {
+  margin: 0 85px 0 35px;
+}
+.code .ercode {
+  position: relative;
+  top: 15px;
+  left: 0;
+}
+.code .ercode img {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #FFFFFF;
+}
+.code .ercode img:first-child {
+  margin: 0 28px 0 0;
+}
+.ercode div {
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  border-color: transparent transparent #FFFFFF;
+}
+.ercode .arrow1 {
+  position: absolute;
+  top: -14px;
+  left: 45px;
+}
+.ercode .arrow2 {
+  position: absolute;
+  top: -14px;
+  left: 175px;
+}
+footer hr {
+  height: 1px;
+  background-color: #EAEAEA;
+  border: none;
+}
+.boxBottom {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1198px;
+  height: 85px;
+  text-align: center;
+}
+.boxBottom p {
+  display: inline-block;
+  margin-top: 35px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #999999;
+}

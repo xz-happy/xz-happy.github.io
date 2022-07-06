@@ -1,0 +1,746 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0 auto;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-size: 16px;
+}
+/* 版心 */
+.w {
+  width: 1200px;
+  margin: auto;
+}
+/* 头部 */
+.navigator {
+  padding-bottom: 4px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  z-index: 9999;
+}
+.navigator .banxin {
+  margin: auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left_logo {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+    width: 136px;
+    height: 47px;
+}
+.logo img {
+    width: 100%;
+}
+.navigator ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.navigator ul a {
+    box-sizing: border-box;
+    color: #333;
+    cursor: pointer;
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    /* border-bottom: 6px solid transparent; */
+}
+.navigator ul a:hover {
+    color: #c02a35;
+    cursor: pointer;
+    border-bottom: 6px solid #c02a35;
+}
+.pickRed {
+  color: #c02a35 !important;
+  border-bottom: 6px solid #c02a35 !important;
+}
+.navigator ul li{
+  box-sizing: border-box;
+  height: 100%;
+}
+.navigator ul li:not(:first-child) {
+    margin-left: 36px;
+}
+.login {
+    display: flex;
+    align-items: center;
+    color: #c02a35;
+    font-size: 18px;
+}
+.login span {
+    display: inline-block;
+}
+.login .login_line {
+    height: 18px;
+    width: 1px;
+    background: #c02a35;
+    margin: 0 16px;
+    opacity: 20%;
+}
+.login .phone_number {
+    width: 160px;
+    padding: 5px 14px 5px 5px;
+    border: 1px solid #c02a35;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.phone_number span {
+    display: inline-block;
+}
+.icon {
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    background: url(https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/call.png) no-repeat center;
+    background-size: cover;
+}
+/* banner部分 */
+.indexBanner {
+  margin-top: 100px;
+  width: 100%;
+}
+.banner_bg {
+  width: 100%;
+  height: 500px;
+  background: url(https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/index_banner.jpg) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 84px;
+  left: 0;
+  z-index: -100;
+}
+.indexBanner .center {
+  margin: 0 auto;
+  font-family: 'PingFang SC';
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.indexBanner .center h1 {
+  display: inline-block;
+  margin-top: 102px;
+  text-align: left;
+  font-family: 'PingFang SC';
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+}
+.indexBanner .center h4 {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+.indexBanner .center button {
+  width: 138px;
+  height: 48px;
+  font-size: 18px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-top: 41px;
+  background: linear-gradient(0deg, #C02A35, #C02A35), linear-gradient(89.93deg, #C02A35 0.07%, #C02A35 99.94%);
+}
+/* 产品与解决方案 */
+.index_pro {
+  width: 100%;
+  margin-top: 85px;
+  font-family: 'PingFang SC';
+}
+.index_pro .index_pro_pro {
+  font-weight: 400;
+  font-size: 36px;
+  text-align: left;
+  color: #000000;
+}
+.index_pro .index_pro_pic {
+  margin: 10px auto 0;
+  width: 1230px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.index_pro_pic a {
+  width: 400px;
+  height: 315px;
+  padding: 40px 45px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.index_pro_pic a:first-child {
+  background: url(https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/a01.png) no-repeat center;
+  background-size: cover;
+}
+.index_pro_pic a:nth-child(2) {
+  background: url(https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/b01.png) no-repeat center;
+  background-size: cover;
+}
+.index_pro_pic a:last-child {
+  background: url(https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/c01.png) no-repeat center;
+  background-size: cover;
+}
+.index_pro_pic a h2 {
+  font-family: 'PingFang SC';
+  font-weight: 600;
+  font-size: 26px;
+  color: #000000;
+}
+.index_pro_pic a h5 {
+  height: 72px;
+  font-family: 'PingFang SC';
+  margin: 20px 0 33px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-align: justify;
+}
+.index_pro_pic a div {
+  width: 72px;
+  height: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #C02A35;
+  border: 1px solid #C02A35;
+}
+.index_pro_pic a:hover h2,
+.index_pro_pic a:hover h5 {
+  color: #FFFFFF;
+}
+.index_pro_pic a:hover div {
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+.index_pro_pic a:first-child:hover {
+  background: url(https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/a02.png) no-repeat center;
+  background-size: cover;
+}
+.index_pro_pic a:nth-child(2):hover {
+  background: url(https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/b02.png) no-repeat center;
+  background-size: cover;
+}
+.index_pro_pic a:last-child:hover {
+  background: url(https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/c02.png) no-repeat center;
+  background-size: cover;
+}
+/* 关于力码 */
+.index_abuotlima {
+  margin-top: 60px;
+}
+.index_abuotlima .about {
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 36px;
+  text-align: left;
+  color: #000000;
+}
+.index_abuotlima .index_abuotlima_pic {
+  width: 100%;
+  height: 460px;
+  display: flex;
+  justify-content: space-between;
+}
+.index_abuotlima .index_abuotlima_pic .index_left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 48px;
+  background: url('https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/left.png') no-repeat center;
+  background-size: cover;
+}
+.height_item {
+  display: inline-block;
+  width: 100px;
+  height: 20px;
+}
+.index_abuotlima .index_abuotlima_pic .index_right {
+  width: 50%;
+  background: url('https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/right.jpg') no-repeat center;
+  background-size: cover;
+}
+.index_abuotlima_pic .index_left h4 {
+  width: 575px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: 'PingFang SC';
+  text-align: justify;
+  color: #FFFFFF;
+}
+/* 投资机构部分 */
+/* 企业荣誉 */
+/* 新闻动态 */
+.index_news {
+  margin-top: 113px;
+}
+.index_news .index_news_top {
+  display: flex;
+  justify-content: space-between;
+}
+.index_news_top_title {
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  text-align: left;
+}
+.index_news .index_news_top .index_news_top_link {
+  margin-top: 20px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  color: #C02A35;
+}
+.index_news  .index_news_list {
+  margin: 39px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.index_news  .index_news_list:hover {
+  background: linear-gradient(90deg, #E6E6E6 0.66%, rgba(243, 245, 248, 0) 94.67%);
+  border-radius: 2px;
+  transition:all .3s;
+}
+.index_news  .index_news_list .index_news_list_image_container {
+  width: 186px;
+  height: 186px;
+  padding: 4px;
+  position: relative;
+}
+.index_news  .index_news_list .index_news_list_image_container .index_news_list_tag {
+  width: 48px;
+  height: 16px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 2px 0px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  line-height: 16px;
+  left: 0;
+  top: 0;
+}
+.media_bg {
+  background-color: #036EFF;
+}
+.honor_bg {
+  background-color: #FF6913;
+}
+.index_news_list .index_news_list_word {
+  margin: 25px 43px 32px 42px;
+}
+.index_news_list .index_news_list_word .list_word_top {
+  display: flex;
+  justify-content: space-between;
+}
+.index_news_list_word .list_word_top .list_word_title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
+}
+.index_news_list_word .list_word_top .list_word_time {
+  padding: 0 7px 1px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #999999;
+  border: 1px solid #999999;
+}
+.index_news_list .index_news_list_word .list_word_bottom {
+  margin-top: 32px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: justify;
+  color: #666666;
+}
+
+/* 合作保司 */
+.partner {
+  margin-top: 113px;
+  font-family: 'PingFang SC';
+}
+.partner .partner_title {
+  text-align: left;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+}
+.partner .partner_word {
+  margin: 36px auto 62px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+  color: #666666;
+}
+.partner .partner_img {
+  width: 100%;
+  height: 314px;
+}
+
+/* 底栏部分 */
+footer {
+  margin-top: 130px;
+  height: 373px;
+  background: #F3F5F8;
+}
+.boxTop{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1198px;
+  height: 288px;
+}
+.rowStyle {
+  margin: 56px 0 24px;
+  width: 400px;
+  height: 18px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #333333;
+}
+.cooperation span,
+.contact span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #666666;
+}
+.code .footicon {
+  margin-top: 56px;
+}
+.code .footicon img {
+  width: 40px;
+  height: 40px;
+}
+.code .footicon img:first-child {
+  margin: 0 85px 0 35px;
+}
+.code .ercode {
+  position: relative;
+  top: 15px;
+  left: 0;
+}
+.code .ercode img {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #FFFFFF;
+}
+.code .ercode img:first-child {
+  margin: 0 28px 0 0;
+}
+.ercode div {
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  border-color: transparent transparent #FFFFFF;
+}
+.ercode .arrow1 {
+  position: absolute;
+  top: -14px;
+  left: 45px;
+}
+.ercode .arrow2 {
+  position: absolute;
+  top: -14px;
+  left: 175px;
+}
+footer hr {
+  height: 1px;
+  background-color: #EAEAEA;
+  border: none;
+}
+.boxBottom {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1198px;
+  height: 85px;
+  text-align: center;
+}
+.boxBottom p {
+  display: inline-block;
+  margin-top: 35px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #999999;
+}
+.switchTab .tab_con .tab_con_one {
+  display: none;
+}
+.switchTab .tab_con .tab_con_one:first-child {
+  display: block;
+}
+.evaluate {
+  width: 1200px;
+  margin: 113px auto 0;
+}
+.investment_evaluate {
+  box-sizing: border-box;
+  width: 1200px;
+  height: 370px;
+  padding: 48px 43px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.evaluate_logo {
+	width: 244px;
+	min-height: 85px;
+	display: inline-flex;
+	align-items: center;
+}
+.evaluate_logo img {
+	width: 100%;
+}
+
+.investment_info {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 54px;
+  margin-top: 50px;
+}
+.investment_info div {
+  color: #333;
+  font-size: 18px;
+  text-align: center;
+}
+.investment_info div:first-child {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.investment_text {
+  display: inline-block;
+  margin-top: 25px;
+  color: #666;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+  text-align: justify;
+  word-break:break-all;
+}
+.honor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.honor_box {
+  box-sizing: border-box;
+  padding: 0 0 118px;
+  margin-top: 160px;
+  position: relative;
+}
+.honor_box_bg {
+  width: 100%;
+  height: 396px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: url('https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/honor_bg.png') no-repeat center center;
+  z-index: -1;
+}
+.honor_swiper {
+  height: 360px;
+  width: 100%;
+  margin-top: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_left, .button_right {
+  width: 43px;
+  height: 43px;
+  cursor: pointer;
+}
+.button_left {
+  background: url('https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/button_left.png') no-repeat center center;
+  background-size: cover;
+  margin-right: 30px;
+}
+.button_right {
+  background: url('https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/button_right.png') no-repeat center center;
+  background-size: cover;
+  margin-left: 30px;
+}
+.image_container {
+  height: 360px;
+  width: 1200px;
+  overflow: hidden;
+  position: relative;
+}
+.image_item_container {
+  width: 5300px;
+  height: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: -1230px;
+  top: 0;
+}
+.image_item {
+  width: 380px;
+  height: 360px;
+  cursor: pointer;
+  border-radius: 2px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  background: #F3F5F8;
+  position: relative;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04);
+}
+.image_item:hover {
+  background: #fff;
+}
+.image_item img {
+  width: 100%;
+}
+/* .image_item_banner {
+  height: 50%;
+} */
+.image_item_text {
+  height: 50%;
+  box-sizing: border-box;
+  padding: 20px 18px 10px;
+}
+.image_item_text .des {
+  display: inline-block;
+  line-height: 27px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  text-align: justify;
+  width: 100%;
+  color: #333;
+}
+.date {
+  position: absolute;
+  right: 18px;
+  bottom: 10px;
+  color: #999;
+  font-size: 16px;
+}
+.image_item_icon {
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url('https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/assets/images/item_icon.png') no-repeat center center;
+}
+
+/* 窗口右侧悬浮 */
+.floatWinContent{
+  position: fixed;
+  right: 0;
+  bottom: 80px;
+  z-index: 10;
+}
+.floatAlwaysCon{
+  background:rgba(255,255,255,1);
+  box-shadow:0px 8px 24px rgba(84,129,255,0.16);
+  border-radius:4px;
+}
+.floatAlwaysCon li {
+  width: 56px;
+  height: 56px;
+  border-bottom: 1px solid rgba(0,77,177,0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.floatAlwaysCon li:hover {
+  background: #F3F5F8;
+}
+.floatAlwaysCon li:last-child {
+  display: none;
+  transform: all 1.3s;
+}
+.floatAlwaysCon .last_li {
+  text-align: center;
+  line-height: 70px;
+}
+.floatAlwaysCon .last_li img {
+  width: 32px;
+  height: 32px;
+}
+.floatAlwaysCon li .floatItem_img {
+  width: 32px;
+  height: 32px;
+  margin-bottom:4px;
+}
+.showIcon {
+  position: absolute;
+  right: 80px;
+  font-size: 14px;
+  padding: 7px;
+  width: 113px;
+  background: red;
+  display: none;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
+}
+.floatAlwaysCon li .showIcon img {
+  width: 115px;
+  height: 107px;
+}
+.trangle{
+  width: 0px;
+  height: 0px;
+  border: 10px solid transparent;
+  border-left-color: white;
+  position: absolute;
+  right: -20px;
+  top: calc(50% - 10px);
+  z-index: 99999;
+}
+.floatAlwaysCon  li:first-child .showIcon img{
+  width: 140px;
+  height: 60px;
+}
+.floatAlwaysCon li .showIcon p {
+  font-family: 'PingFang SC';
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}

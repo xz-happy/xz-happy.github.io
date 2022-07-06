@@ -1,0 +1,321 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0 auto;
+  font-family: 'PingFang SC';
+  font-style: normal;
+  font-size: 16px;
+}
+/* 版心 */
+.w {
+  width: 1200px;
+  margin: auto;
+}
+/* header {
+  width: 100%;
+  height: 114px;
+  background-color: cornflowerblue;
+} */
+
+/* banner部分 */
+.banner {
+  margin-top: 84px;
+  height: 400px;
+  background: url("https://lima-cdn.oss-cn-beijing.aliyuncs.com/lima-website/pc/joinus/img/join-banner.png") no-repeat center center;
+  background-size: cover;
+}
+/* .banner img {
+  width: 100%;
+  opacity: 0.8;
+} */
+.culture {
+  width: 100%;
+  height: 560px;
+  background-color: #F3F5F8;
+}
+.culture-content {
+  height: 100%;
+  overflow: hidden;
+}
+.culture-content h1 {
+  margin-top: 70px;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+}
+.tag {
+  display: flex;
+  margin-top: 48px;
+  justify-content: space-between;
+}
+.tag div {
+  width: 509px;
+  height: 60px;
+  text-align: center;
+  font-family: PingFang SC;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 60px;
+  color: #333333;
+  background: #F3F5F8;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.iconLima {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+.iconLima div {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  background: #F3F5F8;
+  border: 2px solid #C02A35;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 16px rgba(192, 42, 53, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconLima div img {
+  width: 60px;
+}
+.word {
+  display: flex;
+  justify-content: space-between;
+}
+.word p {
+  margin: 24px 20px 0;
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+.life {
+  overflow: hidden;
+}
+.life h1 {
+  margin: 120px 0px 48px;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+}
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+.one .titleWord,
+.one img {
+  width: 600px;
+  height: 400px;
+}
+.one .titleWord {
+  padding-left: 60px;
+  background: #F3F5F8;
+}
+.titleWord h3 {
+  margin-top: 96px;
+  width: 288px;
+  height: 32px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 32px;
+  color: #000000;
+}
+.titleWord h5 {
+  margin-top: 40px;
+  width: 180px;
+  height: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #333333;
+}
+.titleWord p {
+  display: inline-block;
+  margin-top: 12px;
+  width: 380px;
+  height: 16px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+.titleWord .marginTop {
+  margin-top: 52px;
+  width: 400px;
+  z-index: 9999;
+}
+.one img {
+  background: #0B30A5;
+}
+.linkUs {
+  margin: 120px auto !important;
+}
+.linkUs h1 {
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 48px;
+  color: #000000;
+}
+.map {
+  width: 100%;
+  height: 398px;
+  display: flex;
+  border: 1px solid #E1E1E1;
+  box-sizing: border-box;
+}
+.map img {
+  margin: 40px;
+  width: 531px;
+  height: 318px;
+}
+.description .headline {
+  display: flex;
+  justify-content: flex-start;
+  z-index: 9999;
+}
+.headline img {
+  margin: 40px 20px 30px 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.headline .name {
+  margin-top: 40px;
+  display: inline-block;
+  width: 192px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  color: #333333;
+}
+.description .footline {
+  width: 400px;
+  height: 128px;
+}
+.description .footline h5 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.description .footline p {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.linkUs a {
+  margin: 40px 0 145px;
+  display: block;
+  width: 100%;
+  height: 68px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 68px;
+  text-align: center;
+  color: #C02A35;
+  border: 1px solid #C02A35;
+  box-sizing: border-box;
+}
+/* 底栏部分 */
+footer {
+  margin-top: 130px;
+  height: 373px;
+  background: #F3F5F8;
+}
+.boxTop{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1198px;
+  height: 288px;
+}
+.rowStyle {
+  margin: 56px 0 24px;
+  width: 400px;
+  height: 18px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #333333;
+}
+.cooperation span,
+.contact span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #666666;
+}
+.code .footicon {
+  margin-top: 56px;
+}
+.code .footicon img {
+  width: 40px;
+  height: 40px;
+}
+.code .footicon img:first-child {
+  margin: 0 85px 0 35px;
+}
+.code .ercode {
+  position: relative;
+  top: 15px;
+  left: 0;
+}
+.code .ercode img {
+  width: 90px;
+  height: 90px;
+  border: 5px solid #FFFFFF;
+}
+.code .ercode img:first-child {
+  margin: 0 28px 0 0;
+}
+.ercode div {
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  border-color: transparent transparent #FFFFFF;
+}
+.ercode .arrow1 {
+  position: absolute;
+  top: -14px;
+  left: 45px;
+}
+.ercode .arrow2 {
+  position: absolute;
+  top: -14px;
+  left: 175px;
+}
+footer hr {
+  height: 1px;
+  background-color: #EAEAEA;
+  border: none;
+}
+.boxBottom {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 1198px;
+  height: 85px;
+  text-align: center;
+}
+.boxBottom p {
+  display: inline-block;
+  margin-top: 35px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #999999;
+}
+
